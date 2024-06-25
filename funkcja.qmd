@@ -1,0 +1,30 @@
+---
+title: "Funkcja"
+author: "jnaporowsk"
+format: html
+editor: visual
+---
+
+## Plik quarto
+
+Jest to plik quarto wraz z prostą funkcją
+
+## Wnętrze funkcji
+
+```{r}
+new_f <- function(x){
+  # obliczanie y
+  y = x**2/sqrt(x)
+  
+  # zwracanie wartości
+  return(y)
+}
+```
+
+## Wynik funkcji
+
+```{r}
+for(i in seq(0,10,1)){
+  print(new_f(i))
+}
+```
